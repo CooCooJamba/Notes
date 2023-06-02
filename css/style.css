@@ -1,0 +1,27 @@
+.calendar-wrapper {
+  margin: auto;
+}
+table {
+  width: 100%;
+}
+td {
+  height: 48px;
+}
+thead td {
+  font-size: 150%;
+}
+td.not-current {
+  color: #c0c0c0;
+}
+td.today {
+  font-weight: 700;
+  font-size: 150%;
+}
+
+.timedisplay {
+  font-size: 350%;
+}
+
+.hidden {
+  display: none;
+}

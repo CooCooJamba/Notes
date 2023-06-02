@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="img/logo.png" />
+    <title>Marcus</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container-fluid">
+        <h2>
+          Marcus
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <a
+              type="button"
+              class="btn btn-outline-dark note-notes active"
+              title="Заметки"
+            >
+              <i class="fa-solid fa-sticky-note"></i>
+            </a>
+            <a
+              href="favorites.html"
+              type="button"
+              class="btn btn-outline-dark note-favorites"
+              title="Избранное"
+            >
+              <i class="fa-solid fa-star"></i>
+            </a>
+            <a
+              href="options.html"
+              type="button"
+              class="btn btn-outline-dark note-options"
+              title="Настройки"
+            >
+              <i class="fa-solid fa-cog"></i>
+            </a>
+            <a
+              href="deleted.html"
+              type="button"
+              class="btn btn-outline-dark note-deleted"
+              title="Корзина"
+            >
+              <i class="fa-solid fa-trash"></i>
+            </a>
+          </div>
+        </h2>
+        <div class="d-flex">
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Введите запрос"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-dark" title="Найти" type="submit">
+              Найти
+            </button>
+          </form>
+          <a
+            href="profile.html"
+            type="button"
+            class="btn btn-outline-dark note-deleted ms-2"
+            title="Профиль"
+          >
+            <i class="fa-solid fa-user"></i>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-12 col-sm-12 mb-4">
+          <div class="card text-center">
+            <div class="card-body">
+              <div id="timedisplay" class="timedisplay"></div>
+              <div class="calendar-wrapper">
+                <div id="divCal"></div>
+                <button id="btnPrev" class="btn" type="button">
+                  <i class="fa-solid fa-chevron-left"></i>
+                  Предыдущий
+                </button>
+                <button id="btnNext" class="btn" type="button">
+                  Следующий
+                  <i class="fa-solid fa-chevron-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col notes"></div>
+      </div>
+    </div>
+    <button
+      class="btn btn-lg position-fixed btn-outline-success note-add"
+      style="left: 35px; top: 67px"
+      title="Добавить"
+    >
+      <i class="fa-solid fa-plus"></i>
+    </button>
+    <script src="js/app.js"></script>
+  </body>
+</html>
